@@ -1,0 +1,10 @@
+FROM n8nio/n8n
+
+# Install FFmpeg (correct command for Alpine Linux base image)
+RUN apk add --no-cache ffmpeg
+
+# Expose n8n port
+EXPOSE 5678
+
+# Start n8n
+CMD ["n8n"]
