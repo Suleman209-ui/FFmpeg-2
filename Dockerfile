@@ -1,6 +1,7 @@
-FROM n8nio/n8n
+FFROM n8nio/n8n
 
-RUN apt-get update && apt-get install -y ffmpeg
+# Install FFmpeg (Alpine-based)
+RUN apk add --no-cache ffmpeg
 
 EXPOSE 5678
 
